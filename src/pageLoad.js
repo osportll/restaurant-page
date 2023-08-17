@@ -1,14 +1,20 @@
+export let newDiv;
+export let home;
+export let menu;
+export let about;
+export let description;
+
 export function initializePage() {
   const body = selectElement('.body');
   const content = selectElement('#content');
 
-  const newDiv = createElement('div');
+  newDiv = createElement('div');
   newDiv.classList.add('mainContainer');
 
   /* const headLine = createElement('h1');
   headLine.textContent = 'Restaurant'; */
 
-  const description = createElement('h1');
+  description = createElement('h1');
   description.textContent = 'Experience Contemporary Japanese';
   description.classList.add('description');
 
@@ -35,15 +41,15 @@ export function initializePage() {
   linksContainer.classList.add('linksContainer');
   navBar.appendChild(linksContainer);
 
-  const home = linksContainer.appendChild(createElement('a'));
+  home = linksContainer.appendChild(createElement('a'));
   home.classList.add('home');
   home.textContent = 'Home';
   home.href = '#';
-  const menu = linksContainer.appendChild(createElement('a'));
+  menu = linksContainer.appendChild(createElement('a'));
   menu.classList.add('menu');
   menu.textContent = 'Menu';
   menu.href = '#';
-  const about = linksContainer.appendChild(createElement('a'));
+  about = linksContainer.appendChild(createElement('a'));
   about.classList.add('about');
   about.textContent = 'About';
   about.href = '#';
@@ -73,12 +79,24 @@ export function initializePage() {
   gitHubLink.classList.add('gitHubLink');
   gitHubLink.textContent = 'osportll';
   gitHubLink.href = 'https://github.com/osportll';
+
+  const imgCredit = footer.appendChild(createElement('div'));
+  imgCredit.classList.add('imgCredit');
+
+  const imgCreditP = imgCredit.appendChild(createElement('p'));
+  imgCreditP.classList.add('imgCreditP');
+  imgCreditP.textContent = 'Background image courtesy of';
+
+  const imgCreditLink = imgCreditP.appendChild(createElement('a'));
+  imgCreditLink.classList.add('imgCreditLink');
+  imgCreditLink.href = 'https://unsplash.com/photos/EqoCUzG9200';
+  imgCreditLink.textContent = 'Mahmoud Fawzy';
 }
 
-function selectElement(element) {
+export function selectElement(element) {
   return document.querySelector(element);
 }
 
-function createElement(element) {
+export function createElement(element) {
   return document.createElement(element);
 }

@@ -4,9 +4,12 @@
     format('truetype');
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
-  box-sizing: border-box;
   margin: 0;
   min-height: 100vh;
   font-family: 'vanitas-bold', sans-serif;
@@ -130,4 +133,47 @@ body {
   justify-content: center;
   gap: 5px;
   margin-left: 30px;
+}
+
+.imgCredit {
+  margin-right: 20px;
+}
+
+.imgCreditLink {
+  text-decoration: none;
+  color: #a1a1a1;
+  margin-left: 5px;
+}
+
+.imgCreditLink:hover {
+  color: #7e7e7e;
+}
+
+.menuDiv {
+  display: grid;
+  color: #fff;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.185);
+  padding: 20px;
+}
+
+.menuH1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.menuItems {
+  display: grid;
+  gap: 20px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  font-size: 40px;
 }
