@@ -74,7 +74,7 @@ export function initializePage() {
   gitHubText.textContent = 'Made by';
   const gitHubLogo = gitHub.appendChild(createElement('img'));
   gitHubLogo.classList.add('gitHubLogo');
-  gitHubLogo.src = '/home/oscar/repos/restaurant-page/img/GitHub-Mark-32px.png';
+  gitHubLogo.src = 'img/GitHub-Mark-32px.png';
   const gitHubLink = gitHub.appendChild(createElement('a'));
   gitHubLink.classList.add('gitHubLink');
   gitHubLink.textContent = 'osportll';
