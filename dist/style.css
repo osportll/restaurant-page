@@ -177,3 +177,22 @@ body {
 .item5 {
   font-size: 40px;
 }
+
+.aboutDiv {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 600px;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.185);
+  padding: 20px;
+}
+
+.aboutH1 {
+  text-align: center;
+}
+
+.aboutText {
+  text-align: justify;
+  font-size: 23px;
+}

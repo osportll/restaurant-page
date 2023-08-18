@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   aboutDiv: () => (/* binding */ aboutDiv),\n/* harmony export */   initializeAbout: () => (/* binding */ initializeAbout)\n/* harmony export */ });\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\n\n\nlet aboutDiv;\n\nfunction initializeAbout() {\n  aboutDiv = _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.appendChild((0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.createElement)('div'));\n  aboutDiv.classList.add('aboutDiv');\n\n  const aboutH1 = aboutDiv.appendChild((0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.createElement)('h1'));\n  aboutH1.classList.add('menuH1');\n  aboutH1.textContent = 'Our Philosophy';\n\n  const aboutText = aboutDiv.appendChild((0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.createElement)('p'));\n  aboutText.classList.add('aboutText');\n  aboutText.textContent = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, nulla! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis cupiditate nihil molestias labore eos atque consequuntur ea quam quia sapiente? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae autem aliquid saepe accusamus illum natus debitis hic, doloribus quae nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro culpa animi aperiam sapiente itaque consequatur quo inventore, eveniet eos?`;\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\nconsole.log('test');\n\n\n\n\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.initializePage)();\n\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.home.addEventListener('click', () => {\n  _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.appendChild(_pageLoad__WEBPACK_IMPORTED_MODULE_0__.description);\n  _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.removeChild(_menu__WEBPACK_IMPORTED_MODULE_1__.menuDiv);\n});\n\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.menu.addEventListener('click', () => {\n  _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.textContent = '';\n  (0,_menu__WEBPACK_IMPORTED_MODULE_1__.initializeMenu)();\n});\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\nconsole.log('test');\n\n\n\n\n\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__.initializePage)();\n\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.home.addEventListener('click', () => {\n  _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.appendChild(_pageLoad__WEBPACK_IMPORTED_MODULE_0__.description);\n\n  if (_pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.contains(_menu__WEBPACK_IMPORTED_MODULE_1__.menuDiv)) {\n    _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.removeChild(_menu__WEBPACK_IMPORTED_MODULE_1__.menuDiv);\n  } else if (_pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.contains(_about__WEBPACK_IMPORTED_MODULE_2__.aboutDiv)) {\n    _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.removeChild(_about__WEBPACK_IMPORTED_MODULE_2__.aboutDiv);\n  }\n});\n\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.menu.addEventListener('click', () => {\n  _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.textContent = '';\n  (0,_menu__WEBPACK_IMPORTED_MODULE_1__.initializeMenu)();\n});\n\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.about.addEventListener('click', () => {\n  _pageLoad__WEBPACK_IMPORTED_MODULE_0__.newDiv.textContent = '';\n  (0,_about__WEBPACK_IMPORTED_MODULE_2__.initializeAbout)();\n});\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
