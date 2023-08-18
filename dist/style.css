@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'vanitas-bold';
-  src: url('/home/oscar/repos/restaurant-page/font/FontsFree-Net-vanitas-bold.ttf')
-    format('truetype');
+  src: url('../font/FontsFree-Net-vanitas-bold.ttf') format('truetype');
 }
 
 * {
@@ -29,7 +28,7 @@ p,
 }
 
 body {
-  background-image: url(/home/oscar/repos/restaurant-page/img/mahmoud-fawzy-EqoCUzG9200-unsplash.jpg);
+  background-image: url(../img/mahmoud-fawzy-EqoCUzG9200-unsplash.jpg);
   background-size: cover;
   background-position: center center;
 }
